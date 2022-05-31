@@ -43,6 +43,6 @@ numpy, pandas, functools, pingouin, matplotlib, seaborn, plotnine, ast, datetime
 
 1. Download the data and the scripts. Due to multiple cross references within the main and pilot study analysis, it is advised to store scripts of one study part in the same directory.
 
-2. Define the used paths in the `prestudy_helpers` and `main_helpers` files. Also, make sure that you have installed all necessary packages.
+2. Define the used paths in the `prestudy_helpers` and `main_helpers` files. Also, make sure that you have installed all the necessary packages.
 
-2. Run the script you wish to use by using the command `python example-file.py` (The `helpers`-files solely provides helper functions and do not need to be compiled on their own.)
+2. Run the script you wish to use by using the command `python example-file.py` (The `helpers`-files solely provide helper functions and do not need to be compiled on their own.)
