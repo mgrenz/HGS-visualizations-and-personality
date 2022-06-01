@@ -25,12 +25,11 @@ def check(dualx, dualy):
     fig, ax = plt.subplots()    
     plt.scatter(dualx, dualy, label = 'Original data') 
     plt.plot(dualx, res.intercept + res.slope*dualx, 'r', label = 'Linear regression model')
-    plt.xlabel('Openness trait scores')
-    plt.ylabel('SUS total score')
-    plt.title('Scatterplot of openness trait and SUS scores')
+    plt.xlabel('Openness trait score (arb. unit)')
+    plt.ylabel('SUS score (arb. unit)')
     plt.legend(loc='lower left')
-    #plt.show()
-    plt.savefig('openness-usability')
+    plt.show()
+    #plt.savefig('hypo2-open-usability')
     return fig, ax
 
 #calculation of Spearman's rank correlation coefficient

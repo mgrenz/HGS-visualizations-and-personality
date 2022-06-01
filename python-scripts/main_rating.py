@@ -58,10 +58,9 @@ def chart(counter_df):
     sb.barplot(ax = ax, data = counter_df, x='Vis Type',y = 'counts', color = 'royalblue')
     ax.bar_label(ax.containers[0])
     plt.xlabel('Visualization type')
-    plt.ylabel('Number of 1st place ratings')
-    plt.title('Overall visualization preferences')
-    #plt.show()
-    plt.savefig('preference-visualization')
+    plt.ylabel('1st place ratings (arb. unit)')
+    plt.show()
+    #plt.savefig('preference-visualization')
     return fig,ax
 
 

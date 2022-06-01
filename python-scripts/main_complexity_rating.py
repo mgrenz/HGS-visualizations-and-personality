@@ -25,10 +25,10 @@ def spearman(df1, df2):
 #plot complexity scores and preference ratings 
 def corr_plot(df):
     fig, ax = plt.subplots()
-    sb.boxplot(data=df, ax = ax, x= 'Preference-Rating', y='Complexity-Score', order = [1,2,3,4], color = 'royalblue')
-    sb.stripplot(data=df, ax = ax, x= 'Preference-Rating', y='Complexity-Score', order = [1,2,3,4], color = 'black')
-    plt.title('Preference Ratings and Complexity Scores across all Visualizations')
-    plt.xlabel('Preference Rating Place')
+    sb.boxplot(data=df, ax = ax, x='Preference-Rating', y='Complexity-Score', order = [1,2,3,4], color = 'royalblue')
+    sb.stripplot(data=df, ax = ax, x='Preference-Rating', y='Complexity-Score', order = [1,2,3,4], color = 'black')
+    plt.xlabel('Preference rating (place)')
+    plt.ylabel('Complexity score (arb. unit)')
     plt.show()
     #plt.savefig('eda-pref-compl')
     return fig, ax

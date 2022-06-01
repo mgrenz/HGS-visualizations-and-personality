@@ -74,8 +74,7 @@ def bar(df):
     sb.barplot(ax = ax, data = df, x='questionnaire', y = 'total_score', order = ['Dendrogram', 'Treemap', 'Sunburst', 'Circlepacking'], color = 'royalblue')
     ax.bar_label(ax.containers[0])
     plt.xlabel('HGS visualization type')
-    plt.ylabel('Total complexity score')
-    plt.title('Total complexity scores of HGS visualization types')
+    plt.ylabel('Total complexity score (arb. unit)')
     plt.show()
     #plt.savefig('complexity-rating-scores')
     return fig, ax
